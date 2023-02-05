@@ -1,2 +1,7 @@
+![](https://img.hhcdn.ru/employer-logo/3096661.jpeg)
+
 # Python-Backend-Engineer-at-MTS
-Test tasks
+
+**Тестовое задание**
+
+*Применяемый стек: Python, FastAPI, SQLite, SQLAlchemy, regex.*
