@@ -7,7 +7,7 @@ IPV4: re.Pattern = re.compile(r'^((25[0-5]|(2[0-4]|1\d|[1-9]|)\d)\.?\b){4}$')
 
 
 class Connection(ABC):
-    '''Симулирвание подключения к устройству.'''
+    '''Симулирование подключения к устройству.'''
 
     MIN_PASSWORD_LENGTH: Final[int] = 8
     MAX_PASSWORD_LENGTH: Final[int] = 16
@@ -46,7 +46,7 @@ class Connection(ABC):
 
 
 class Telnet(Connection):
-    '''Симулирвание Telnet-подключения к устройству.'''
+    '''Симулирование Telnet-подключения к устройству.'''
 
     def open(self) -> None:
         print(f'Открытие Telnet-соединения к {self.ip}...')
@@ -62,7 +62,7 @@ class Telnet(Connection):
 
 
 class SSL(Connection):
-    '''Симулирвание SSL-подключения к устройству.'''
+    '''Симулирование SSL-подключения к устройству.'''
 
     def open(self) -> None:
         print(f'Открытие SSL-соединения к {self.ip}...')
